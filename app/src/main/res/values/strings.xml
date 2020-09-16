@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Interval2</string>
+    <string name="leftleg">左腳</string>
+    <string name="rightleg">右腳</string>
+    <string name="resttime">休息時間</string>
+    <string name="totaltime">總時間</string>
+    <string name="acctime">累積時間</string>
+    <string name="startbtn">開始</string>
+    <string name="pausebtn">暫停</string>
+    <string name="exit">離開</string>
+    <string name="reset">重置</string>
+    <string name="rep">回合</string>
+    <string name="page">換頁</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.example.interval.MyViewModel" />
+    </data>
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            tools:context=".SetFragment">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:text="總時間(s)" />
+
+                <EditText
+                    android:layout_marginLeft="5dp"
+                    android:padding="5dp"
+                    android:id="@+id/setTotalTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:background="@color/cardview_shadow_start_color"
+                    android:ems="10"
+                    android:hint="總時間"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:text=""
+                    app:layout_constraintStart_toStartOf="@+id/guideline24"
+                    app:layout_constraintTop_toTopOf="@+id/guideline15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:text="左腳運動時間(s)" />
+
+                <EditText
+                    android:background="@color/cardview_shadow_start_color"
+                    android:padding="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/setLeftLegTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+
+                    android:ems="10"
+                    android:hint="左腳運動時間"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:text=""
+                    app:layout_constraintStart_toStartOf="@+id/guideline24"
+                    app:layout_constraintTop_toTopOf="@+id/guideline17" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:text="右腳運動時間(s)" />
+
+                <EditText
+                    android:padding="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/setRightLegTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+
+                    android:ems="10"
+                    android:hint="右腳運動時間"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:text=""
+                    app:layout_constraintStart_toStartOf="@+id/guideline24"
+                    app:layout_constraintTop_toTopOf="@+id/guideline22" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:text="休息時間(s)" />
+
+                <EditText
+                    android:padding="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/setRestTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+
+                    android:ems="10"
+                    android:hint="休息時間"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:text=""
+                    app:layout_constraintStart_toStartOf="@+id/guideline24"
+                    app:layout_constraintTop_toTopOf="@+id/guideline23" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"
+                android:text="使用語音"
+                app:layout_constraintStart_toStartOf="@+id/guideline24"
+                app:layout_constraintTop_toTopOf="@+id/guideline11" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="5dp">
+
+                <Button
+                    android:id="@+id/v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/btnOk"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ok"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline25"
+                    app:layout_constraintStart_toStartOf="@+id/guideline24"
+                    app:layout_constraintTop_toTopOf="@+id/guideline26" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:text="Test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</layout>
